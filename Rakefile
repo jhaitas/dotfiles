@@ -1,6 +1,11 @@
 require 'rake'
 require 'erb'
 
+desc "default task is remind the user of the install task"
+task :default do
+  print "perhaps you meant 'rake install'\n"
+end
+
 desc "install the dot files into user's home directory"
 task :install do
   ignoreFiles = %w[Rakefile README]
