@@ -1,7 +1,11 @@
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
-  export PS1='%3~$(git_info_for_prompt)%# '
+	export PS1='%3~$(git_info_for_prompt)%# '
+fi
+
+if [ $SHLVL -gt "1" ]; then
+	export PS1=${SHLVL}'|'${PS1}
 fi
 
 export CLICOLOR=1
@@ -14,7 +18,7 @@ autoload -U ~/.zsh/functions/*(:t)
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
-REPORTTIME=10                           # print elapsed time when more than 10 seconds
+REPORTTIME=10                           		# print elapsed time when more than 10 seconds
 
 setopt NO_BG_NICE                           # don't nice background tasks
 setopt NO_HUP
@@ -31,6 +35,6 @@ setopt COMPLETE_IN_WORD
 
 setopt APPEND_HISTORY                       # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY     # adds history incrementally and share it across sessions
-setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
+setopt HIST_IGNORE_ALL_DUPS									# don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
