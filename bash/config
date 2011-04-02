@@ -2,4 +2,4 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 export EDITOR=vim
-export VISUAL=mate
+export VISUAL=mate_wait 
