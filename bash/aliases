@@ -1,8 +1,6 @@
 alias matlab='matlab -nodisplay'
 alias gpg='gpg2'
 
-
-
 alias apache2ctl='sudo opt/local/apache2/bin/apachectl'
 
 
