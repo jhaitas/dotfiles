@@ -1,1 +1,1 @@
-alias apache2ctl='sudo opt/local/apache2/bin/apachectl'
+if [ -f /usr/bin/matlab ]; then alias matlab='matlab -nodisplay'; fi
