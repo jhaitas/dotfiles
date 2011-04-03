@@ -1,11 +1,9 @@
 # .bashrc
-
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-  . /etc/bashrc
-fi
+if [ -f /etc/bashrc ]; then . /etc/bashrc; fi
 
 # User specific
+source ~/.bash/os/identify
 source ~/.bash/aliases
 source ~/.bash/completions
 source ~/.bash/config

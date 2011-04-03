@@ -1,0 +1,6 @@
+# MacPorts
+if [ -d /opt/local/sbin ]; then PATH=/opt/local/sbin:${PATH}; fi
+if [ -d /opt/local/bin ]; then PATH=/opt/local/bin:${PATH}; fi
+export PATH
+if [ -d /opt/local/share/man ]; then MANPATH=/opt/local/share/man:${MANPATH}; fi
+export MANPATH
