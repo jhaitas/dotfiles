@@ -1,0 +1,6 @@
+# identify operating system
+case "`uname`" in
+Darwin)
+    . ~/.zsh/os/darwin
+    ;;
+esac
