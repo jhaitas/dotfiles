@@ -10,4 +10,5 @@ if [ -f /etc/bashrc ]; then . /etc/bashrc; fi
 . ~/.bash/path
 
 # use .localrc for settings specific to one system
-if [ -f ~/.localrc ]; then . ~/.localrc fi
+if [ -f ~/.localrc ]; then . ~/.localrc; fi
+
