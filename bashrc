@@ -11,4 +11,3 @@ if [ -f /etc/bashrc ]; then . /etc/bashrc; fi
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then . ~/.localrc; fi
-
